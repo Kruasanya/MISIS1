@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main ()
+{
+	system("chcp 1251>nul");
+	int a, b, c;
+	int D;
+	int x1, x2;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	D = b*b - 4 * a*c;
+		if (D > 0)
+		{
+			x1 = (-b + sqrt(D)) / 2*a;
+			x2 = (-b - sqrt(D)) / 2*a;
+			cout << "x1";
+			cout << "x2";
+		}
+		else if (D=0)
+		{
+			x1 = -b / 2 * a;
+			cout << "x1";
+		}
+		else if (D < 0);
+		{
+			cout << "Нет корней";
+		}
+	system("pause > nul");
+	return 0;
+}
